@@ -6,13 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/ext_power.h>
 
 #define BASE     0
-#define NAV      1
-#define NUM      2
-#define CODE     3
-#define ADJUST   4
 
 / {
 	keymap {
@@ -28,7 +23,7 @@
 	&kp ESC     &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp LSHFT   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
 	&kp LCTRL   &kp Z &kp X &kp C &kp V &kp B &tog ADJUST &kp LGUI         &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	     &kp LGUI &kp LALT &lt NUM BSPC &lt CODE DEL &lt NAV ESC          &lt NAV TAB  &lt NUM RET &lt CODE SPACE &kp RALT &kp RALT
+	     &kp LGUI &kp LALT &kp BSPC &kp DEL &kp ESC          &kp TAB  &kp RET &kp SPACE &kp RALT &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
