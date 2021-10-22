@@ -10,6 +10,7 @@
 #define BASE     0
 #define NAV      1
 #define NUM      2
+#define CODE     3
 
 / {
 	keymap {
@@ -25,7 +26,7 @@
 	&kp ESC     &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp LSHFT   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
 	&kp LCTRL   &kp Z &kp X &kp C &kp V &kp B &kp LGUI &kp LGUI         &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	     &kp LGUI &kp LALT &lt NUM BSPC &kp DEL &lt NAV ESC          &lt NAV TAB  &lt NUM RET &kp SPACE &kp RALT &kp RALT
+	     &kp LGUI &kp LALT &lt NUM BSPC &lt CODE DEL &lt NAV ESC          &lt NAV TAB  &lt NUM RET &lt CODE SPACE &kp RALT &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -58,6 +59,22 @@
 		&trans &kp GT &kp DQT &kp LPAR &kp RPAR &kp UNDERSCORE &kp DOT &kp N4 &kp N5 &kp N6 &kp EQUAL &trans
 		&trans &kp TILDE &kp GRAVE &kp LBRC &kp RBRC &kp BSLH &trans &trans &trans &trans &kp N0 &kp N1 &kp N2 &kp N3 &kp FSLH &trans
 		&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+
+		code_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |       |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
+// |       |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |      |
+// |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   |      |
+//                     |      |      |      |         |         |  |         |         |      |       |       |
+			bindings = <
+	     &trans &kp LT &kp SQT &kp LBKT &kp RBKT &kp QMARK &kp PIPE &kp AMPS &kp ASTRK &kp LPAR &kp PLUS &kp MINUS
+		 &trans &kp GT &kp DQT &kp LPAR &kp RPAR &kp UNDERSCORE &kp DOT &kp DLLR &kp PRCNT &kp CARET &kp EQUAL  &trans
+		 &trans &kp TILDE &kp GRAVE &kp LBRC &kp RBRC &kp BSLH  &trans  &trans  &trans  &trans &kp RPAR &kp EXCL &kp AT &kp HASH &kp FSLH  &trans
+		 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
