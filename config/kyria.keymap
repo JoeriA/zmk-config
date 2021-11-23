@@ -86,12 +86,12 @@
 
 		adjust_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |  -  |  -  | EP_OFF | EP_ON  |  -   |                                          |  -   |  -    |  -    |  -   |   -   |      |
+// |       |  -  |  -  | EP_OFF | EP_ON  | EP_TOG |                                          |  -   |  -    |  -    |  -   |   -   |      |
 // |       |  -  |  -  | BT_PRV | BT_NXT | BT_CLR |                                          |  -   |  -    |  -    |  -   |   -   |      |
 // |       |  -  |  -  | RGB_BRD | RGB_BRI | RGB_TOG |         |         |  |         |         |  -   |  -    |  -    |  -   |   -   |      |
 //                     |      |      |      |         |         |  |         |         |      |       |       |
 			bindings = <
-	&trans   &none &none &ext_power EP_OFF &ext_power EP_ON &none                                                &none &ext_power EP_OFF &ext_power EP_ON &none   &none    &trans
+	&trans   &none &none &ext_power EP_OFF &ext_power EP_ON &ext_power EP_TOG                                                &none &ext_power EP_OFF &ext_power EP_ON &none   &none    &trans
 	&trans   &none &none &bt BT_PRV &bt BT_NXT &bt BT_CLR                                        &none &bt BT_PRV &bt BT_NXT &none   &none &trans
 	&trans   &none &none &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_TOG &trans &trans        &trans &trans &none &none  &none &none &none &trans
 	                 &trans &trans &trans &trans &trans                      &trans  &trans  &trans &trans &trans
