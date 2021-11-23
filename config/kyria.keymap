@@ -85,13 +85,13 @@
 
 		adjust_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |  -  |  -  |  -   |  -   |  -   |                                          |  -   |  -    |  -    |  -   |   -   |      |
-// |       |  -  |  -  |  UP  |RIGHT |  -   |                                          |  -   |  -    |  -    |  -   |   -   |      |
+// |       |  -  |  -  | EP_OFF | EP_ON  |  -   |                                          |  -   |  -    |  -    |  -   |   -   |      |
+// |       |  -  |  -  | BT_PRV | BT_NXT | BT_CRL |                                          |  -   |  -    |  -    |  -   |   -   |      |
 // |       |  -  |  -  |  -   |  -   |  -   |         |         |  |         |         |  -   |  -    |  -    |  -   |   -   |      |
 //                     |      |      |      |         |         |  |         |         |      |       |       |
 			bindings = <
 	&trans   &none &none &ext_power EP_OFF &ext_power EP_ON &none                                                &none &ext_power EP_OFF &ext_power EP_ON &none   &none    &trans
-	&trans   &none &none &bt BT_PRV &bt BT_NXT &none                                        &none &bt BT_PRV &bt BT_NXT &none   &none &trans
+	&trans   &none &none &bt BT_PRV &bt BT_NXT &bt BT_CRL                                        &none &bt BT_PRV &bt BT_NXT &none   &none &trans
 	&trans   &none &none &none &none &none &trans &trans        &trans &trans &none &none  &none &none &none &trans
 	                 &trans &trans &trans &trans &trans                      &trans  &trans  &trans &trans &trans
 			>;
