@@ -112,7 +112,7 @@
 // | ESC|  `  |  Q  |   M  |  E   |  T  |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |CTRL|SHIFT|  A  |   W  |  D   |  F  |                                          |  H   |  J    |  K    |  L   |   ;   | SHIFT|
 // | TAB|  Z  |  X  |   S  |  C   |  V  |    B    |    N    |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                  |   O  |  R   |SPACE|    G    |    H    |  |   TAB   |   RET   | SPACE| R-ALT | R-ALT |
+//                  |   O  |  R   |SPACE|    G    |   NUM   |  |   TAB   |   RET   | SPACE| R-ALT | R-ALT |
 			bindings = <
 	&kp ESC     &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp LSHFT   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RSHFT
@@ -125,9 +125,9 @@
 
 		game_arrow_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
-// |       |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |      |
-// |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   |      |
+// |       |     |     |      |      |      |                                          |  Y   |  U    |  I    |  O   |   P   |      |
+// |  CTRL |     |  <  |  ^   |  >   |      |                                          |  H   |  J    |  K    |  L   |   ;   |      |
+// |       |     |     |  v   |      |      |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   |      |
 //                     |      |      |      |         |         |  |         |         |      |       |       |
 			bindings = <
         &trans &kp LT &kp SQT &kp LBRC &kp RBRC &kp QMARK &kp PIPE &kp N7 &kp N8 &kp N9 &kp PLUS &kp MINUS
@@ -141,9 +141,9 @@
 
 		game_num_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
-// |       |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |      |
-// |       |  Z  |  X  |  C   |  V   |  B   |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   |      |
+// |       |     |  7  |  8   |  9   |      |                                          |  Y   |  U    |  I    |  O   |   P   |      |
+// |  CTRL |     |  4  |  5   |  6   |      |                                          |  H   |  J    |  K    |  L   |   ;   |      |
+// |       |  0  |  1  |  2   |  3   |      |         |         |  |         |         |  N   |  M    |  ,    |  .   |   /   |      |
 //                     |      |      |      |         |         |  |         |         |      |       |       |
 			bindings = <
         &trans &kp LT &kp SQT &kp LBRC &kp RBRC &kp QMARK &kp PIPE &kp N7 &kp N8 &kp N9 &kp PLUS &kp MINUS
