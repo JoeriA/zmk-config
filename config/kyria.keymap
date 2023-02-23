@@ -113,7 +113,7 @@
 				&kp ESC    &none     &kp Q &kp M    &kp R &kp T                                                	          &kp Y    	     &kp U    &kp I     &kp O   &kp P    &kp BSLH
 				&kp LCTRL  &kp LSHFT &kp A &kp W    &kp D &kp F                                                	          &kp H   	     &kp J    &kp K     &kp L   &kp SEMI &kp RSHFT
 				&kp TAB    &kp Z     &kp X &kp S    &kp C &kp V     &kp B &kp N            &tog GAME_WASD &tog GAME_ARROW &kp N          &kp M    &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-										   &kp LGUI &kp R &kp SPACE &kp G &lt GAME_ARROW V &lt NAV TAB    &lt NUM RET     &lt CODE SPACE &kp RALT &kp RALT
+										   &kp LGUI &kp R &kp SPACE &kp G &lt GAME_NUM V &lt NAV TAB    &lt NUM RET     &lt CODE SPACE &kp RALT &kp RALT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 									&inc_dec_kp PG_UP PG_DN>;
 		};
