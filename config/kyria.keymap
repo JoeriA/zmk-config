@@ -121,7 +121,7 @@
 										   &kp O &kp V &kp SPACE &kp G &lt GAME_NUM V &lt NAV TAB  &lt NUM RET &lt CODE SPACE &kp RALT &kp RALT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 									&inc_dec_kp PG_UP PG_DN>;
-			label = "game wasd";
+			label = "game w";
 		};
 
 		game_arrow_layer {
@@ -137,7 +137,7 @@
 										  &none    &trans    &trans  &trans &trans &trans         &trans          &trans &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 						&inc_dec_kp PG_UP PG_DN>;
-			label = "game arrow";
+			label = "game_a";
 		};
 
 		game_num_layer {
@@ -153,7 +153,7 @@
 										&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 						&inc_dec_kp PG_UP PG_DN>;
-			label = "game num";
+			label = "game_n";
 		};
 	};
 };
